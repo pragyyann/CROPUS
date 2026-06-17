@@ -1,0 +1,14 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/bulk-supply/page": "/bulk-supply",
+  "/cart/page": "/cart",
+  "/checkout/page": "/checkout",
+  "/contact/page": "/contact",
+  "/order-success/page": "/order-success",
+  "/page": "/",
+  "/product/[slug]/page": "/product/[slug]",
+  "/shop/page": "/shop",
+  "/state-blends/page": "/state-blends"
+}

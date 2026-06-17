@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #C6A15B;
+  --color-charcoal: #111111;
+  --color-deep-forest: #0F1F16;
+  --color-warm-ivory: #F7F3EA;
+  --color-soft-cream: #EFE8DC;
+  --color-stone-grey: #D9D6D0;
+  --color-taupe-grey: #B8AAA3;
+  --color-muted-text-grey: #6F6A63;
+  --color-muted-gold: #C6A15B;
+  --color-earth-brown: #7A5F45;
+  --color-olive-green: #4F6F52;
+
+  --font-headline: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono-plex: "IBM Plex Mono", monospace;
+}
+
+@utility font-fraunces {
+  font-family: var(--font-headline);
+}
+
+@utility font-mono-plex {
+  font-family: var(--font-mono-plex);
+}
+
+/* Base resets & styles matching the wireframe aesthetic */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-warm-ivory);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
