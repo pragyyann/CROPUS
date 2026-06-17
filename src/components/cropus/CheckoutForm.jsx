@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import CTAButton from './CTAButton';
+import FormField from './FormField';
 
 export default function CheckoutForm({ onSubmit }) {
   const [formData, setFormData] = useState({
@@ -40,42 +41,33 @@ export default function CheckoutForm({ onSubmit }) {
           Contact Details
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-1.5">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              required
-              value={formData.fullName}
-              onChange={handleChange}
-              placeholder="e.g. Aarav Sharma"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">Mobile Number</label>
-            <input
-              type="tel"
-              name="phone"
-              required
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="e.g. +91 98765 43210"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5 md:col-span-2">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">Email Address</label>
-            <input
-              type="email"
-              name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="e.g. aarav@gmail.com"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
+          <FormField
+            label="Full Name"
+            name="fullName"
+            required
+            value={formData.fullName}
+            onChange={handleChange}
+            placeholder="e.g. Aarav Sharma"
+          />
+          <FormField
+            label="Mobile Number"
+            name="phone"
+            type="tel"
+            required
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="e.g. +91 98765 43210"
+          />
+          <FormField
+            label="Email Address"
+            name="email"
+            type="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="e.g. aarav@gmail.com"
+            className="md:col-span-2"
+          />
         </div>
       </div>
 
@@ -85,77 +77,55 @@ export default function CheckoutForm({ onSubmit }) {
           Delivery Address
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-1.5 md:col-span-2">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">House / Flat / Street No.</label>
-            <input
-              type="text"
-              name="houseStreet"
-              required
-              value={formData.houseStreet}
-              onChange={handleChange}
-              placeholder="e.g. Flat 405, Block B, Silver Springs"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5 md:col-span-2">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">Area / Locality / Sector</label>
-            <input
-              type="text"
-              name="areaLocality"
-              required
-              value={formData.areaLocality}
-              onChange={handleChange}
-              placeholder="e.g. Jayanagar 4th Block"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">City</label>
-            <input
-              type="text"
-              name="city"
-              required
-              value={formData.city}
-              onChange={handleChange}
-              placeholder="e.g. Bengaluru"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">State</label>
-            <input
-              type="text"
-              name="state"
-              required
-              value={formData.state}
-              onChange={handleChange}
-              placeholder="e.g. Karnataka"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">PIN Code</label>
-            <input
-              type="text"
-              name="pinCode"
-              required
-              value={formData.pinCode}
-              onChange={handleChange}
-              placeholder="e.g. 560041"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <label className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider">Landmark (Optional)</label>
-            <input
-              type="text"
-              name="landmark"
-              value={formData.landmark}
-              onChange={handleChange}
-              placeholder="e.g. Opposite Metro Station"
-              className="px-3 py-2.5 border border-[#c3c8c2] rounded-md text-sm text-[#111111] focus:outline-none focus:border-[#C6A15B] bg-white"
-            />
-          </div>
+          <FormField
+            label="House / Flat / Street No."
+            name="houseStreet"
+            required
+            value={formData.houseStreet}
+            onChange={handleChange}
+            placeholder="e.g. Flat 405, Block B, Silver Springs"
+            className="md:col-span-2"
+          />
+          <FormField
+            label="Area / Locality / Sector"
+            name="areaLocality"
+            required
+            value={formData.areaLocality}
+            onChange={handleChange}
+            placeholder="e.g. Jayanagar 4th Block"
+            className="md:col-span-2"
+          />
+          <FormField
+            label="City"
+            name="city"
+            required
+            value={formData.city}
+            onChange={handleChange}
+            placeholder="e.g. Bengaluru"
+          />
+          <FormField
+            label="State"
+            name="state"
+            required
+            value={formData.state}
+            onChange={handleChange}
+            placeholder="e.g. Karnataka"
+          />
+          <FormField
+            label="PIN Code"
+            name="pinCode"
+            required
+            value={formData.pinCode}
+            onChange={handleChange}
+            placeholder="e.g. 560041"
+          />
+          <FormField
+            label="Landmark (Optional)"
+            name="landmark"
+            value={formData.landmark}
+            onChange={handleChange}
+            placeholder="e.g. Opposite Metro Station"
+          />
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[95vh] lg:min-h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-br from-[#0F1F16] via-[#111111] to-[#1C1A17] text-[#F7F3EA] z-10">
+    <section className="relative w-full min-h-[90vh] lg:min-h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-br from-[#0F1F16] via-[#111111] to-[#1C1A17] text-[#F7F3EA] z-10">
       
       {/* Background Video Layer */}
       <video
@@ -13,18 +13,18 @@ export default function HeroSection() {
         muted
         loop
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-70"
+        preload="metadata"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
         aria-hidden="true"
       >
-        {/* Place the H.264 MP4 file at client/public/videos/cropus-hero.mp4 */}
         <source src="/videos/cropus-hero.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlays: Dark wash and dynamic warm/green gradient layer for editorial look */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#111111]/90 via-[#0F1F16]/50 to-[#111111]/90 pointer-events-none" />
+      {/* Dark overlay for readability and premium look */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#111111]/90 via-[#0F1F16]/65 to-[#111111]/90 pointer-events-none" />
 
-      {/* Main Hero Grid Content */}
-      <div className="relative z-10 w-full max-w-[1180px] mx-auto px-6 pt-36 md:pt-40 pb-16 flex-grow flex items-center">
+      {/* Main Hero Content */}
+      <div className="relative z-20 w-full max-w-[1180px] mx-auto px-6 pt-36 md:pt-44 pb-16 flex-grow flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
           
           {/* Left Column: Headline, Subheadline, CTAs */}
@@ -47,47 +47,39 @@ export default function HeroSection() {
             </h1>
 
             {/* Subheadline Paragraph */}
-            <p className="text-[#F7F3EA]/80 text-sm md:text-base leading-relaxed max-w-[540px]">
-              Region-aware vermicompost solutions for Indian soil, climate, moisture, and crop conditions — from Kashmir’s cold valleys to Gujarat’s dry belts and South India’s humid farms.
+            <p className="text-[#F7F3EA]/85 text-sm md:text-base leading-relaxed max-w-[540px]">
+              CROPUS creates region-aware vermicompost solutions for Indian soil, climate, moisture, and crop conditions.
             </p>
 
-            {/* CTA buttons row */}
+            {/* CTA Buttons Row */}
             <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4 mt-4 w-full">
               <Link
                 href="/shop"
-                className="px-6 py-4 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] hover:text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer shadow-md flex items-center justify-center gap-2"
+                className="px-6 py-4 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer shadow-md flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
               >
-                Shop Small Packs
-                <span className="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                <span>Shop Small Packs &rarr;</span>
+              </Link>
+
+              <Link
+                href="/state-blends"
+                className="px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA] border border-[#F7F3EA]/30 hover:border-[#C6A15B] hover:text-[#C6A15B] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
+              >
+                <span>Explore State Blends &rarr;</span>
               </Link>
 
               <Link
                 href="/bulk-supply"
-                className="px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA] border border-[#F7F3EA]/30 hover:border-[#F7F3EA] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2"
+                className="px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA]/80 hover:text-[#F7F3EA] border border-[#F7F3EA]/15 hover:border-[#F7F3EA]/40 font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
               >
-                Request Bulk Quote
-                <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </Link>
-            </div>
-
-            {/* Subtle third link */}
-            <div className="mt-2">
-              <Link
-                href="/state-blends"
-                className="inline-flex items-center gap-2 font-mono-plex text-xs uppercase tracking-widest text-[#F7F3EA]/80 hover:text-[#C6A15B] transition-colors group underline underline-offset-4 decoration-[#C6A15B]/40 hover:decoration-[#C6A15B]"
-              >
-                Explore State Blends
-                <span className="material-symbols-outlined text-xs transition-transform duration-200 group-hover:translate-x-1">
-                  east
-                </span>
+                <span>Request Bulk Quote &rarr;</span>
               </Link>
             </div>
             
           </div>
 
           {/* Right Column: Premium Floating Product Card */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
-            <div className="bg-[#111111]/80 backdrop-blur-md border border-[#c3c8c2]/15 p-6 rounded-lg shadow-2xl max-w-[340px] w-full flex flex-col gap-5 hover:border-[#C6A15B]/30 transition-all duration-300">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end w-full mt-8 lg:mt-0">
+            <div className="bg-[#111111]/85 backdrop-blur-md border border-[#c3c8c2]/15 p-6 rounded-lg shadow-2xl max-w-[340px] w-full flex flex-col gap-5 hover:border-[#C6A15B]/30 transition-all duration-300">
               <div className="flex justify-between items-start">
                 <span className="font-mono-plex text-[10px] text-[#C6A15B] uppercase tracking-wider font-semibold bg-[#C6A15B]/10 px-2 py-0.5 rounded-sm">
                   CROPUS Pack
@@ -117,20 +109,19 @@ export default function HeroSection() {
                 </div>
                 <div className="flex flex-col items-end gap-0.5">
                   <span className="font-mono-plex text-[9px] text-[#F7F3EA]/40 uppercase tracking-wider">
-                    Starting At
+                    Price
                   </span>
                   <span className="font-fraunces text-2xl text-[#C6A15B] font-semibold leading-none">
-                    ₹499
+                    From ₹499
                   </span>
                 </div>
               </div>
               
               <Link 
                 href="/shop" 
-                className="w-full py-3.5 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] hover:text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+                className="w-full py-3.5 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-sm focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
               >
-                View Packs 
-                <span className="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                <span>View Packs &rarr;</span>
               </Link>
             </div>
           </div>
@@ -138,8 +129,8 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Trust & Stat Strip Section at Bottom */}
-      <div className="w-full border-t border-[#c3c8c2]/10 py-6 bg-[#111111]/55 backdrop-blur-md relative z-10">
+      {/* Bottom Trust Strip */}
+      <div className="w-full border-t border-[#c3c8c2]/15 py-6 bg-[#111111]/75 backdrop-blur-md relative z-20">
         <div className="max-w-[1180px] mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
           
           <div className="flex flex-col items-start lg:items-center text-left lg:text-center gap-1.5 lg:border-r lg:border-[#c3c8c2]/10 last:border-r-0 lg:px-4">

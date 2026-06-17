@@ -8,6 +8,16 @@ import SectionShell from '../components/cropus/SectionShell';
 import FinalCTA from '../components/cropus/FinalCTA';
 import { products } from '../data/cropusData';
 
+export const metadata = {
+  title: 'CROPUS Vermicompost INDIA LLP | Region-Aware Vermicompost for Indian Soil',
+  description: 'CROPUS offers region-aware vermicompost solutions for Indian soil, crop, climate, and moisture conditions. Shop small packs or request bulk supply.',
+  keywords: ['vermicompost', 'organic farming India', 'soil recovery', 'region-aware compost', 'soil carbon restoration'],
+  openGraph: {
+    title: 'CROPUS Vermicompost INDIA LLP | Region-Aware Vermicompost for Indian Soil',
+    description: 'CROPUS offers region-aware vermicompost solutions for Indian soil, crop, climate, and moisture conditions. Shop small packs or request bulk supply.',
+  }
+};
+
 export default function HomePage() {
   // Feature the main pack sizes on the homepage
   const featuredProducts = products.slice(0, 3); // 3 items fit nicely on desktop grid

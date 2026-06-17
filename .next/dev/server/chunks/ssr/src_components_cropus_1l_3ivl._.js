@@ -15,14 +15,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function HeroSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative w-full min-h-[95vh] lg:min-h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-br from-[#0F1F16] via-[#111111] to-[#1C1A17] text-[#F7F3EA] z-10",
+        className: "relative w-full min-h-[90vh] lg:min-h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-br from-[#0F1F16] via-[#111111] to-[#1C1A17] text-[#F7F3EA] z-10",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                 autoPlay: true,
                 muted: true,
                 loop: true,
                 playsInline: true,
-                className: "absolute top-0 left-0 w-full h-full object-cover z-0 opacity-70",
+                preload: "metadata",
+                className: "absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none",
                 "aria-hidden": "true",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
                     src: "/videos/cropus-hero.mp4",
@@ -38,14 +39,14 @@ function HeroSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 z-0 bg-gradient-to-b from-[#111111]/90 via-[#0F1F16]/50 to-[#111111]/90 pointer-events-none"
+                className: "absolute inset-0 z-10 bg-gradient-to-b from-[#111111]/90 via-[#0F1F16]/65 to-[#111111]/90 pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
                 lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 w-full max-w-[1180px] mx-auto px-6 pt-36 md:pt-40 pb-16 flex-grow flex items-center",
+                className: "relative z-20 w-full max-w-[1180px] mx-auto px-6 pt-36 md:pt-44 pb-16 flex-grow flex items-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full",
                     children: [
@@ -100,8 +101,8 @@ function HeroSection() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[#F7F3EA]/80 text-sm md:text-base leading-relaxed max-w-[540px]",
-                                    children: "Region-aware vermicompost solutions for Indian soil, climate, moisture, and crop conditions — from Kashmir’s cold valleys to Gujarat’s dry belts and South India’s humid farms."
+                                    className: "text-[#F7F3EA]/85 text-sm md:text-base leading-relaxed max-w-[540px]",
+                                    children: "CROPUS creates region-aware vermicompost solutions for Indian soil, climate, moisture, and crop conditions."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 50,
@@ -112,72 +113,53 @@ function HeroSection() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/shop",
-                                            className: "px-6 py-4 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] hover:text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer shadow-md flex items-center justify-center gap-2",
-                                            children: [
-                                                "Shop Small Packs",
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "material-symbols-outlined text-sm font-bold",
-                                                    children: "arrow_forward"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                    lineNumber: 61,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                            className: "px-6 py-4 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer shadow-md flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Shop Small Packs →"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                                lineNumber: 60,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                             lineNumber: 56,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/bulk-supply",
-                                            className: "px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA] border border-[#F7F3EA]/30 hover:border-[#F7F3EA] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2",
-                                            children: [
-                                                "Request Bulk Quote",
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "material-symbols-outlined text-sm",
-                                                    children: "arrow_forward"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                    lineNumber: 69,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                            href: "/state-blends",
+                                            className: "px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA] border border-[#F7F3EA]/30 hover:border-[#C6A15B] hover:text-[#C6A15B] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Explore State Blends →"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                            lineNumber: 64,
+                                            lineNumber: 63,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/bulk-supply",
+                                            className: "px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA]/80 hover:text-[#F7F3EA] border border-[#F7F3EA]/15 hover:border-[#F7F3EA]/40 font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Request Bulk Quote →"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                                lineNumber: 74,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                            lineNumber: 70,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 55,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-2",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/state-blends",
-                                        className: "inline-flex items-center gap-2 font-mono-plex text-xs uppercase tracking-widest text-[#F7F3EA]/80 hover:text-[#C6A15B] transition-colors group underline underline-offset-4 decoration-[#C6A15B]/40 hover:decoration-[#C6A15B]",
-                                        children: [
-                                            "Explore State Blends",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "material-symbols-outlined text-xs transition-transform duration-200 group-hover:translate-x-1",
-                                                children: "east"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 80,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                        lineNumber: 75,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -187,9 +169,9 @@ function HeroSection() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "lg:col-span-5 flex justify-center lg:justify-end w-full",
+                            className: "lg:col-span-5 flex justify-center lg:justify-end w-full mt-8 lg:mt-0",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-[#111111]/80 backdrop-blur-md border border-[#c3c8c2]/15 p-6 rounded-lg shadow-2xl max-w-[340px] w-full flex flex-col gap-5 hover:border-[#C6A15B]/30 transition-all duration-300",
+                                className: "bg-[#111111]/85 backdrop-blur-md border border-[#c3c8c2]/15 p-6 rounded-lg shadow-2xl max-w-[340px] w-full flex flex-col gap-5 hover:border-[#C6A15B]/30 transition-all duration-300",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex justify-between items-start",
@@ -199,7 +181,7 @@ function HeroSection() {
                                                 children: "CROPUS Pack"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 92,
+                                                lineNumber: 84,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -207,13 +189,13 @@ function HeroSection() {
                                                 children: "India Delivery"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 95,
+                                                lineNumber: 87,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                        lineNumber: 91,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -224,7 +206,7 @@ function HeroSection() {
                                                 children: "CROPUS Region Packs"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 101,
+                                                lineNumber: 93,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -232,13 +214,13 @@ function HeroSection() {
                                                 children: "State-specific selection available"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 104,
+                                                lineNumber: 96,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                        lineNumber: 100,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -252,12 +234,37 @@ function HeroSection() {
                                                         children: "Pack Sizes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 103,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "font-mono-plex text-[11px] text-[#F7F3EA]/85 font-bold",
                                                         children: "1kg / 5kg / 10kg / 25kg"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                                lineNumber: 102,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-col items-end gap-0.5",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-mono-plex text-[9px] text-[#F7F3EA]/40 uppercase tracking-wider",
+                                                        children: "Price"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                                        lineNumber: 111,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-fraunces text-2xl text-[#C6A15B] font-semibold leading-none",
+                                                        children: "From ₹499"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                                         lineNumber: 114,
@@ -268,66 +275,37 @@ function HeroSection() {
                                                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                                 lineNumber: 110,
                                                 columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex flex-col items-end gap-0.5",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "font-mono-plex text-[9px] text-[#F7F3EA]/40 uppercase tracking-wider",
-                                                        children: "Starting At"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                        lineNumber: 119,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "font-fraunces text-2xl text-[#C6A15B] font-semibold leading-none",
-                                                        children: "₹499"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                        lineNumber: 122,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 118,
-                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                        lineNumber: 109,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/shop",
-                                        className: "w-full py-3.5 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] hover:text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-sm",
-                                        children: [
-                                            "View Packs",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "material-symbols-outlined text-sm font-bold",
-                                                children: "arrow_forward"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                                lineNumber: 133,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        className: "w-full py-3.5 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-sm focus:ring-2 focus:ring-[#C6A15B] focus:outline-none",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: "View Packs →"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                            lineNumber: 124,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                        lineNumber: 128,
+                                        lineNumber: 120,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                lineNumber: 90,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                            lineNumber: 89,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this)
                     ]
@@ -342,7 +320,7 @@ function HeroSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full border-t border-[#c3c8c2]/10 py-6 bg-[#111111]/55 backdrop-blur-md relative z-10",
+                className: "w-full border-t border-[#c3c8c2]/15 py-6 bg-[#111111]/75 backdrop-blur-md relative z-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-[1180px] mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4",
                     children: [
@@ -354,12 +332,37 @@ function HeroSection() {
                                     children: "01 / FORMULATION"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                    lineNumber: 146,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-fraunces text-sm sm:text-base text-[#F7F3EA] font-semibold",
                                     children: "Region-Aware Blends"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                    lineNumber: 140,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                            lineNumber: 136,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col items-start lg:items-center text-left lg:text-center gap-1.5 lg:border-r lg:border-[#c3c8c2]/10 last:border-r-0 lg:px-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "font-mono-plex text-[10px] text-[#C6A15B] uppercase tracking-wider font-semibold",
+                                    children: "02 / FLEXIBILITY"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
+                                    lineNumber: 146,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "font-fraunces text-sm sm:text-base text-[#F7F3EA] font-semibold",
+                                    children: "1kg–25kg Packs"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 149,
@@ -376,7 +379,7 @@ function HeroSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-mono-plex text-[10px] text-[#C6A15B] uppercase tracking-wider font-semibold",
-                                    children: "02 / FLEXIBILITY"
+                                    children: "03 / CAPACITY"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 155,
@@ -384,7 +387,7 @@ function HeroSection() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-fraunces text-sm sm:text-base text-[#F7F3EA] font-semibold",
-                                    children: "1kg–25kg Packs"
+                                    children: "Bulk Supply Available"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 158,
@@ -397,11 +400,11 @@ function HeroSection() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col items-start lg:items-center text-left lg:text-center gap-1.5 lg:border-r lg:border-[#c3c8c2]/10 last:border-r-0 lg:px-4",
+                            className: "flex flex-col items-start lg:items-center text-left lg:text-center gap-1.5 lg:px-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-mono-plex text-[10px] text-[#C6A15B] uppercase tracking-wider font-semibold",
-                                    children: "03 / CAPACITY"
+                                    children: "04 / DISTRIBUTION"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 164,
@@ -409,7 +412,7 @@ function HeroSection() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-fraunces text-sm sm:text-base text-[#F7F3EA] font-semibold",
-                                    children: "Bulk Supply Available"
+                                    children: "India-Wide Delivery"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
                                     lineNumber: 167,
@@ -420,41 +423,16 @@ function HeroSection() {
                             fileName: "[project]/src/components/cropus/HeroSection.jsx",
                             lineNumber: 163,
                             columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col items-start lg:items-center text-left lg:text-center gap-1.5 lg:px-4",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "font-mono-plex text-[10px] text-[#C6A15B] uppercase tracking-wider font-semibold",
-                                    children: "04 / DISTRIBUTION"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                    lineNumber: 173,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "font-fraunces text-sm sm:text-base text-[#F7F3EA] font-semibold",
-                                    children: "India-Wide Delivery"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                                    lineNumber: 176,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                            lineNumber: 172,
-                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                    lineNumber: 143,
+                    lineNumber: 134,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/cropus/HeroSection.jsx",
-                lineNumber: 142,
+                lineNumber: 133,
                 columnNumber: 7
             }, this)
         ]

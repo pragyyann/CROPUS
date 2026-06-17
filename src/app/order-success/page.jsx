@@ -1,6 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Order Status | CROPUS Vermicompost',
+  description: 'Track the status of your region-aware vermicompost supply and logistics coordinates.',
+  robots: {
+    index: false,
+    follow: false
+  }
+};
+
 export default function OrderSuccessPage() {
   return (
     <div className="w-full max-w-[1180px] mx-auto px-6 pt-36 pb-20 flex-grow flex items-center justify-center">
@@ -22,13 +31,13 @@ export default function OrderSuccessPage() {
         <div className="flex flex-wrap justify-center gap-4 mt-2">
           <Link 
             href="/shop" 
-            className="px-6 py-3 bg-[#C6A15B] text-[#111111] font-mono-plex text-[10px] uppercase tracking-wider font-bold hover:bg-[#111111] hover:text-[#C6A15B] transition-all rounded-sm"
+            className="px-6 py-3 bg-[#C6A15B] text-[#111111] font-mono-plex text-[10px] uppercase tracking-wider font-bold hover:bg-[#111111] hover:text-[#C6A15B] transition-all rounded-sm text-center"
           >
             Back to Shop
           </Link>
           <Link 
             href="/cart" 
-            className="px-6 py-3 border border-[#111111] text-[#111111] font-mono-plex text-[10px] uppercase tracking-wider font-bold hover:bg-[#111111] hover:text-white transition-all rounded-sm"
+            className="px-6 py-3 border border-[#111111] text-[#111111] font-mono-plex text-[10px] uppercase tracking-wider font-bold hover:bg-[#111111] hover:text-white transition-all rounded-sm text-center"
           >
             Back to Cart
           </Link>

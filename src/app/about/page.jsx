@@ -3,6 +3,15 @@ import Link from 'next/link';
 import PageHeader from '../../components/cropus/PageHeader';
 import WireframeImage from '../../components/cropus/WireframeImage';
 
+export const metadata = {
+  title: 'About Us | CROPUS Vermicompost',
+  description: 'Learn about CROPUS Vermicompost INDIA LLP and our Soil-First Philosophy, delivering tailored, region-aware organic compost formulations.',
+  openGraph: {
+    title: 'About Us | CROPUS Vermicompost',
+    description: 'Learn about CROPUS Vermicompost INDIA LLP and our Soil-First Philosophy, delivering tailored, region-aware organic compost formulations.',
+  }
+};
+
 export default function AboutPage() {
   return (
     <main className="w-full max-w-[1180px] mx-auto px-6 pt-36 pb-20 flex-grow animate-fade-in">

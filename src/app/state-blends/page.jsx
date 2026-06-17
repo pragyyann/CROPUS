@@ -3,6 +3,15 @@ import Link from 'next/link';
 import PageHeader from '../../components/cropus/PageHeader';
 import { regionalBlendsDetailed } from '../../data/cropusData';
 
+export const metadata = {
+  title: 'State Blends | CROPUS Vermicompost',
+  description: 'Understand the distinct organic compositions engineered for different regional climates and soils across India.',
+  openGraph: {
+    title: 'State Blends | CROPUS Vermicompost',
+    description: 'Understand the distinct organic compositions engineered for different regional climates and soils across India.',
+  }
+};
+
 export default function StateBlendsPage() {
   return (
     <main className="w-full max-w-[1180px] mx-auto px-6 pt-36 pb-20 flex-grow">

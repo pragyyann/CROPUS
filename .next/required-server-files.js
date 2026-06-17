@@ -104,7 +104,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\pragy\\OneDrive\\Desktop\\CROPUS",
+    "outputFileTracingRoot": "C:\\Users\\pragy\\OneDrive\\Desktop\\CROPUS PRODUCTION",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -304,12 +304,12 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Users\\pragy\\OneDrive\\Desktop\\CROPUS"
+      "root": "C:\\Users\\pragy\\OneDrive\\Desktop\\CROPUS PRODUCTION"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\pragy\\OneDrive\\Desktop\\CROPUS\\client",
-  "relativeAppDir": "client",
+  "appDir": "C:\\Users\\pragy\\OneDrive\\Desktop\\CROPUS PRODUCTION",
+  "relativeAppDir": "",
   "files": [
     ".next\\package.json",
     ".next\\routes-manifest.json",
