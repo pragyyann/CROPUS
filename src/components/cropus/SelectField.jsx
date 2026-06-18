@@ -1,4 +1,5 @@
 import React from 'react';
+import ExpandMoreIcon from './icons/ExpandMoreIcon';
 
 export default function SelectField({
   label,
@@ -33,7 +34,7 @@ export default function SelectField({
         </select>
         {/* Custom Dropdown Arrow */}
         <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[#6F6A63]">
-          <span className="material-symbols-outlined text-base select-none">expand_more</span>
+          <ExpandMoreIcon className="h-4 w-4" />
         </div>
       </div>
     </div>

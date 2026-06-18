@@ -6,6 +6,7 @@ import PageHeader from '../../components/cropus/PageHeader';
 import CartItem from '../../components/cropus/CartItem';
 import CartSummary from '../../components/cropus/CartSummary';
 import { useCart } from '../../context/CartContext';
+import ShoppingBagIcon from '../../components/cropus/icons/ShoppingBagIcon';
 
 export default function CartClient() {
   const { cartItems, updateQuantity, removeFromCart, cartSubtotal, cartCount } = useCart();
@@ -28,9 +29,7 @@ export default function CartClient() {
 
       {cartItems.length === 0 ? (
         <div className="text-center py-20 border border-[#c3c8c2] bg-[#fcf9f3]/40 rounded-lg flex flex-col items-center gap-4 justify-center flex-grow">
-          <span className="material-symbols-outlined text-4xl text-[#7A5F45] select-none">
-            shopping_bag
-          </span>
+          <ShoppingBagIcon className="h-10 w-10 text-[#7A5F45]" />
           <div className="flex flex-col gap-1">
             <h3 className="font-fraunces text-2xl font-semibold text-[#111111]">Your Cart is Empty</h3>
             <p className="text-sm text-[#6F6A63]">You haven't selected any region blends yet.</p>

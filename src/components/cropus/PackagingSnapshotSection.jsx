@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionShell from './SectionShell';
+import InfoIcon from './icons/InfoIcon';
 
 export default function PackagingSnapshotSection() {
   const packagingRows = [
@@ -62,9 +63,7 @@ export default function PackagingSnapshotSection() {
         
         {/* Footnote */}
         <div className="flex items-center gap-3 p-4 bg-[#EFE8DC]/40 border border-[#c3c8c2]/50 rounded-lg">
-          <span className="material-symbols-outlined text-[#C6A15B] text-lg select-none">
-            info
-          </span>
+          <InfoIcon className="h-5 w-5 text-[#C6A15B] shrink-0" />
           <span className="text-[#6F6A63] text-xs leading-relaxed">
             Custom packaging and private-label support available for selected partners.
           </span>

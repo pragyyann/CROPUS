@@ -6,6 +6,8 @@ import PageHeader from '../../components/cropus/PageHeader';
 import CheckoutForm from '../../components/cropus/CheckoutForm';
 import OrderSummary from '../../components/cropus/OrderSummary';
 import { useCart } from '../../context/CartContext';
+import LocalShippingIcon from '../../components/cropus/icons/LocalShippingIcon';
+import DescriptionIcon from '../../components/cropus/icons/DescriptionIcon';
 
 export default function CheckoutClient() {
   const { cartItems, cartSubtotal } = useCart();
@@ -26,7 +28,7 @@ export default function CheckoutClient() {
       {checkoutData ? (
         <div className="p-8 md:p-12 border border-[#C6A15B] bg-[#fcf9f3] rounded-lg text-center flex flex-col items-center gap-6 mt-4 max-w-2xl mx-auto shadow-xl">
           <div className="w-12 h-12 rounded-full bg-[#0F1F16] text-[#C6A15B] flex items-center justify-center">
-            <span className="material-symbols-outlined text-2xl select-none">local_shipping</span>
+            <LocalShippingIcon className="h-6 w-6" />
           </div>
           <div className="flex flex-col gap-2">
             <h4 className="font-fraunces text-2xl font-bold text-[#111111]">Details Captured Locally</h4>
@@ -73,9 +75,7 @@ export default function CheckoutClient() {
         </div>
       ) : cartItems.length === 0 ? (
         <div className="text-center py-20 border border-[#c3c8c2] bg-[#fcf9f3]/40 rounded-lg flex flex-col items-center gap-4 justify-center flex-grow">
-          <span className="material-symbols-outlined text-4xl text-[#7A5F45] select-none">
-            receipt_long
-          </span>
+          <DescriptionIcon className="h-10 w-10 text-[#7A5F45]" />
           <div className="flex flex-col gap-1">
             <h3 className="font-fraunces text-2xl font-semibold text-[#111111]">No Items to Checkout</h3>
             <p className="text-sm text-[#6F6A63]">Please add products to your cart before checking out.</p>

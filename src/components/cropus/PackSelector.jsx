@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
+import ExpandMoreIcon from './icons/ExpandMoreIcon';
 
 export default function PackSelector({ selectedPackId, packs, onChange, className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,12 +48,10 @@ export default function PackSelector({ selectedPackId, packs, onChange, classNam
             <span className="font-fraunces text-sm font-bold text-[#111111]">
               ₹{selectedPack.price.toLocaleString('en-IN')}
             </span>
-            <span 
-              className="material-symbols-outlined text-sm text-[#6F6A63] transition-transform duration-300 select-none"
+            <ExpandMoreIcon 
+              className="h-4 w-4 text-[#6F6A63] transition-transform duration-300 select-none"
               style={{ transform: isOpen ? 'rotate(180deg)' : 'none' }}
-            >
-              expand_more
-            </span>
+            />
           </div>
         </button>
 

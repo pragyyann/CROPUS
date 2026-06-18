@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import CTAButton from './CTAButton';
 import FormField from './FormField';
 import SelectField from './SelectField';
+import CheckIcon from './icons/CheckIcon';
 
 export default function BulkQuoteForm() {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ export default function BulkQuoteForm() {
         className="p-8 md:p-12 border border-[#C6A15B] bg-[#fcf9f3] rounded-lg text-center flex flex-col items-center gap-6 mt-12 max-w-2xl mx-auto shadow-sm animate-fade-in"
       >
         <div className="w-12 h-12 rounded-full bg-[#0F1F16] text-[#C6A15B] flex items-center justify-center">
-          <span className="material-symbols-outlined text-2xl select-none">done</span>
+          <CheckIcon className="h-6 w-6" />
         </div>
         <div className="flex flex-col gap-2">
           <h4 className="font-fraunces text-2xl font-bold text-[#111111]">Quote Request Captured</h4>

@@ -4,6 +4,10 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCart } from '../../context/CartContext';
+import ArrowRightIcon from './icons/ArrowRightIcon';
+import ShoppingBagIcon from './icons/ShoppingBagIcon';
+import MenuIcon from './icons/MenuIcon';
+import CloseIcon from './icons/CloseIcon';
 
 export default function CropusNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -108,7 +112,7 @@ export default function CropusNavbar() {
             }`}
             aria-label={`Shopping cart containing ${cartCount} items`}
           >
-            <span className="material-symbols-outlined text-base select-none">shopping_bag</span>
+            <ShoppingBagIcon className="h-4 w-4" />
             <span>Cart ({cartCount})</span>
           </Link>
         </div>
@@ -125,7 +129,7 @@ export default function CropusNavbar() {
             }`}
             aria-label={`Shopping cart containing ${cartCount} items`}
           >
-            <span className="material-symbols-outlined text-sm select-none">shopping_bag</span>
+            <ShoppingBagIcon className="h-3.5 w-3.5" />
             <span>({cartCount})</span>
           </Link>
           
@@ -135,9 +139,11 @@ export default function CropusNavbar() {
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
           >
-            <span className="material-symbols-outlined text-lg select-none">
-              {mobileMenuOpen ? 'close' : 'menu'}
-            </span>
+            {mobileMenuOpen ? (
+              <CloseIcon className="h-4 w-4" />
+            ) : (
+              <MenuIcon className="h-4 w-4" />
+            )}
           </button>
         </div>
       </div>
@@ -153,7 +159,7 @@ export default function CropusNavbar() {
             }`}
           >
             <span>Home</span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
           <Link 
             href="/shop" 
@@ -163,7 +169,7 @@ export default function CropusNavbar() {
             }`}
           >
             <span>Shop</span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
           <Link 
             href="/state-blends" 
@@ -173,7 +179,7 @@ export default function CropusNavbar() {
             }`}
           >
             <span>State Blends</span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
           <Link 
             href="/bulk-supply" 
@@ -183,7 +189,7 @@ export default function CropusNavbar() {
             }`}
           >
             <span>Bulk Supply</span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
           <Link 
             href="/about" 
@@ -193,7 +199,7 @@ export default function CropusNavbar() {
             }`}
           >
             <span>About</span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
           <Link 
             href="/contact" 
@@ -203,7 +209,7 @@ export default function CropusNavbar() {
             }`}
           >
             <span>Contact</span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
           <Link 
             href="/cart" 
@@ -213,10 +219,10 @@ export default function CropusNavbar() {
             }`}
           >
             <span className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-sm">shopping_bag</span>
+              <ShoppingBagIcon className="h-3.5 w-3.5" />
               <span>Cart ({cartCount})</span>
             </span>
-            <span className="material-symbols-outlined text-xs">arrow_forward</span>
+            <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
         </div>
       )}

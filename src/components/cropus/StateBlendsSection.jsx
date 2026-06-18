@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SectionShell from './SectionShell';
+import ArrowRightIcon from './icons/ArrowRightIcon';
 
 export default function StateBlendsSection() {
   const regions = [
@@ -74,7 +75,7 @@ export default function StateBlendsSection() {
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#111111] text-[#F7F3EA] hover:bg-[#C6A15B] hover:text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold transition-all duration-300 rounded-sm"
           >
             <span>Find Your State Blend</span>
-            <span className="material-symbols-outlined text-sm">arrow_right_alt</span>
+            <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
       </div>

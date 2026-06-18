@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { productDetails } from '../../data/cropusData';
+import ExpandMoreIcon from './icons/ExpandMoreIcon';
 
 export default function ProductDetailsAccordion() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -23,9 +24,7 @@ export default function ProductDetailsAccordion() {
                 className="w-full px-6 py-5 flex justify-between items-center bg-[#fcf9f3]/40 hover:bg-[#EFE8DC]/30 text-left transition-colors focus:outline-none cursor-pointer"
               >
                 <span className="font-fraunces text-base font-bold text-[#111111]">{item.title}</span>
-                <span className="material-symbols-outlined text-[#6F6A63] transition-transform duration-300 select-none" style={{ transform: isOpen ? 'rotate(180deg)' : 'none' }}>
-                  expand_more
-                </span>
+                <ExpandMoreIcon className="h-5 w-5 text-[#6F6A63] transition-transform duration-300 select-none" style={{ transform: isOpen ? 'rotate(180deg)' : 'none' }} />
               </button>
               
               {isOpen && (

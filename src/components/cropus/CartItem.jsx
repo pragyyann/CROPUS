@@ -1,5 +1,6 @@
 import React from 'react';
 import QuantityStepper from './QuantityStepper';
+import DeleteIcon from './icons/DeleteIcon';
 
 export default function CartItem({ item, onUpdateQuantity, onRemove }) {
   const sizeLabel = item.packSize || item.size || '5kg';
@@ -27,7 +28,7 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }) {
           className="text-red-800/60 hover:text-red-800 p-1.5 flex items-center justify-center cursor-pointer border border-[#c3c8c2]/30 rounded-md md:hidden"
           aria-label="Remove item"
         >
-          <span className="material-symbols-outlined text-lg select-none">delete</span>
+          <DeleteIcon className="h-4.5 w-4.5" />
         </button>
       </div>
 
@@ -59,7 +60,7 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }) {
           className="hidden md:flex text-red-800/60 hover:text-red-800 p-2 items-center justify-center cursor-pointer border border-[#c3c8c2]/30 rounded-md hover:bg-red-50/50 transition-colors"
           aria-label="Remove item"
         >
-          <span className="material-symbols-outlined text-lg select-none">delete</span>
+          <DeleteIcon className="h-4.5 w-4.5" />
         </button>
       </div>
     </div>

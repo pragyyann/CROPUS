@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionShell from './SectionShell';
+import ArrowRightIcon from './icons/ArrowRightIcon';
 
 export default function AwarenessSection() {
   const stages = [
@@ -52,7 +53,7 @@ export default function AwarenessSection() {
               {/* Connector indicator for desktop */}
               {idx < 2 && (
                 <div className="hidden md:flex absolute top-1/2 -right-4 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center bg-[#F7F3EA] border border-[#c3c8c2] rounded-full text-[#6F6A63]">
-                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  <ArrowRightIcon className="h-4 w-4" />
                 </div>
               )}
             </div>

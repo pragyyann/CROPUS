@@ -5,6 +5,7 @@ import PageHeader from '../../components/cropus/PageHeader';
 import FormField from '../../components/cropus/FormField';
 import SelectField from '../../components/cropus/SelectField';
 import CTAButton from '../../components/cropus/CTAButton';
+import CheckIcon from '../../components/cropus/icons/CheckIcon';
 
 export default function ContactClient() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ export default function ContactClient() {
         {submitted ? (
           <div className="p-8 md:p-12 border border-[#C6A15B] bg-[#fcf9f3] rounded-lg text-center flex flex-col items-center gap-6 shadow-sm">
             <div className="w-12 h-12 rounded-full bg-[#0F1F16] text-[#C6A15B] flex items-center justify-center">
-              <span className="material-symbols-outlined text-2xl select-none">done</span>
+              <CheckIcon className="h-6 w-6" />
             </div>
             <div className="flex flex-col gap-2">
               <h4 className="font-fraunces text-2xl font-bold text-[#111111]">Inquiry Received</h4>

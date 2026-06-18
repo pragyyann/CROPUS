@@ -1,4 +1,5 @@
 import React from 'react';
+import ExpandMoreIcon from './icons/ExpandMoreIcon';
 
 export default function RegionSelector({ selectedRegion, regions, onChange, className = '' }) {
   return (
@@ -21,7 +22,7 @@ export default function RegionSelector({ selectedRegion, regions, onChange, clas
         </select>
         {/* Custom Chevron Arrow */}
         <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[#6F6A63]">
-          <span className="material-symbols-outlined text-base">expand_more</span>
+          <ExpandMoreIcon className="h-4 w-4" />
         </div>
       </div>
       <p className="text-[11px] text-[#6F6A63] leading-relaxed">

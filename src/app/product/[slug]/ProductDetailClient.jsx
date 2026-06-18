@@ -12,6 +12,7 @@ import ProductGrid from '../../../components/cropus/ProductGrid';
 import SectionShell from '../../../components/cropus/SectionShell';
 import { products } from '../../../data/cropusData';
 import { useCart } from '../../../context/CartContext';
+import LocalShippingIcon from '../../../components/cropus/icons/LocalShippingIcon';
 
 export default function ProductDetailClient({ slug }) {
   const router = useRouter();
@@ -171,7 +172,7 @@ export default function ProductDetailClient({ slug }) {
 
           {/* Logistics Note */}
           <div className="text-xs text-[#6F6A63] flex items-center gap-2 bg-[#EFE8DC]/30 p-3 rounded border border-[#c3c8c2]/20">
-            <span className="material-symbols-outlined text-[#4F6F52] text-sm select-none">local_shipping</span>
+            <LocalShippingIcon className="h-4 w-4 text-[#4F6F52] shrink-0" />
             <span>Delivery across India. Estimated delivery 3–7 business days.</span>
           </div>
         </div>

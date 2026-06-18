@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import ArrowRightIcon from './icons/ArrowRightIcon';
 
 export default function HeroSection() {
   return (
@@ -55,23 +56,26 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4 mt-4 w-full">
               <Link
                 href="/shop"
-                className="px-6 py-4 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer shadow-md flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
+                className="px-6 py-4 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer shadow-md flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none animate-fade-in"
               >
-                <span>Shop Small Packs &rarr;</span>
+                <span>Shop Small Packs</span>
+                <ArrowRightIcon className="h-4 w-4" />
               </Link>
 
               <Link
                 href="/state-blends"
                 className="px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA] border border-[#F7F3EA]/30 hover:border-[#C6A15B] hover:text-[#C6A15B] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
               >
-                <span>Explore State Blends &rarr;</span>
+                <span>Explore State Blends</span>
+                <ArrowRightIcon className="h-4 w-4" />
               </Link>
 
               <Link
                 href="/bulk-supply"
                 className="px-6 py-4 bg-transparent hover:bg-white/5 text-[#F7F3EA]/80 hover:text-[#F7F3EA] border border-[#F7F3EA]/15 hover:border-[#F7F3EA]/40 font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm cursor-pointer flex items-center justify-center gap-2 focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
               >
-                <span>Request Bulk Quote &rarr;</span>
+                <span>Request Bulk Quote</span>
+                <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </div>
             
@@ -121,7 +125,8 @@ export default function HeroSection() {
                 href="/shop" 
                 className="w-full py-3.5 bg-[#C6A15B] hover:bg-[#F7F3EA] text-[#111111] font-mono-plex text-xs uppercase tracking-widest font-bold text-center transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-sm focus:ring-2 focus:ring-[#C6A15B] focus:outline-none"
               >
-                <span>View Packs &rarr;</span>
+                <span>View Packs</span>
+                <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </div>
           </div>

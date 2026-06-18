@@ -3,6 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import SectionShell from './SectionShell';
+import ArrowRightIcon from './icons/ArrowRightIcon';
 
 export default function BuyingPathSection() {
   const router = useRouter();
@@ -50,9 +51,7 @@ export default function BuyingPathSection() {
             <span className="font-mono-plex text-xs uppercase tracking-widest font-bold text-[#111111] group-hover:underline">
               Shop Small Packs
             </span>
-            <span className="material-symbols-outlined text-xl text-[#111111] group-hover:translate-x-2 transition-transform duration-300">
-              arrow_right_alt
-            </span>
+            <ArrowRightIcon className="h-5 w-5 text-[#111111] group-hover:translate-x-2 transition-transform duration-300" />
           </div>
         </div>
 
@@ -90,9 +89,7 @@ export default function BuyingPathSection() {
             <span className="font-mono-plex text-xs uppercase tracking-widest font-bold text-[#F7F3EA] group-hover:text-[#C6A15B] transition-colors">
               Request Regional Bulk Quote
             </span>
-            <span className="material-symbols-outlined text-xl text-[#C6A15B] group-hover:translate-x-2 transition-transform duration-300">
-              arrow_right_alt
-            </span>
+            <ArrowRightIcon className="h-5 w-5 text-[#C6A15B] group-hover:translate-x-2 transition-transform duration-300" />
           </div>
         </div>
       </div>

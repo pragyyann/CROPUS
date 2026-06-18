@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import PageHeader from '../../components/cropus/PageHeader';
 import WireframeImage from '../../components/cropus/WireframeImage';
+import EcoIcon from '../../components/cropus/icons/EcoIcon';
+import CancelIcon from '../../components/cropus/icons/CancelIcon';
 
 export const metadata = {
   title: 'About Us | CROPUS Vermicompost',
@@ -46,7 +48,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16 border-t border-b border-[#c3c8c2]/30 py-12 bg-white/20 px-6 rounded-lg">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2 text-[#4F6F52]">
-            <span className="material-symbols-outlined text-xl select-none">eco</span>
+            <EcoIcon className="h-5 w-5 shrink-0" />
             <h3 className="font-fraunces text-xl font-bold text-[#111111]">The Soil-First Philosophy</h3>
           </div>
           <p className="text-[#6F6A63] text-xs leading-relaxed">
@@ -56,7 +58,7 @@ export default function AboutPage() {
         
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2 text-red-800/80">
-            <span className="material-symbols-outlined text-xl select-none">cancel</span>
+            <CancelIcon className="h-5 w-5 shrink-0" />
             <h3 className="font-fraunces text-xl font-bold text-[#111111]">What We Avoid</h3>
           </div>
           <p className="text-[#6F6A63] text-xs leading-relaxed">

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import ScienceIcon from '../../components/cropus/icons/ScienceIcon';
 
 export const metadata = {
   title: 'Order Status | CROPUS Vermicompost',
@@ -15,7 +16,7 @@ export default function OrderSuccessPage() {
     <div className="w-full max-w-[1180px] mx-auto px-6 pt-36 pb-20 flex-grow flex items-center justify-center">
       <div className="p-8 md:p-12 border border-[#c3c8c2] bg-[#fcf9f3]/40 rounded-lg text-center flex flex-col items-center gap-6 max-w-xl shadow-sm">
         <div className="w-12 h-12 rounded-full bg-[#EFE8DC] text-[#C6A15B] flex items-center justify-center border border-[#C6A15B]/30">
-          <span className="material-symbols-outlined text-2xl select-none">science</span>
+          <ScienceIcon className="h-6 w-6" />
         </div>
         <div className="flex flex-col gap-2">
           <h1 className="font-fraunces text-2xl md:text-3xl font-bold text-[#111111]">Order Success Preview</h1>
