@@ -3,10 +3,10 @@ import CheckoutClient from './CheckoutClient';
 
 export const metadata = {
   title: 'Checkout | CROPUS Vermicompost',
-  description: 'Provide shipment details to finalize your region-specific vermicompost procurement order.',
+  description: 'Complete your CROPUS vermicompost order details through guest checkout.',
   openGraph: {
     title: 'Checkout | CROPUS Vermicompost',
-    description: 'Provide shipment details to finalize your region-specific vermicompost procurement order.',
+    description: 'Complete your CROPUS vermicompost order details through guest checkout.',
   }
 };
 

@@ -2,11 +2,11 @@ import React from 'react';
 import BulkSupplyClient from './BulkSupplyClient';
 
 export const metadata = {
-  title: 'Bulk Supply | CROPUS Vermicompost',
-  description: 'Request bulk quotes for CROPUS region-specific vermicompost supply for commercial farming, FPOs, and distributors.',
+  title: 'Bulk Vermicompost Supply India | CROPUS',
+  description: 'Request bulk vermicompost supply for farms, nurseries, agri distributors, organic stores, FPOs, and private label buyers.',
   openGraph: {
-    title: 'Bulk Supply | CROPUS Vermicompost',
-    description: 'Request bulk quotes for CROPUS region-specific vermicompost supply for commercial farming, FPOs, and distributors.',
+    title: 'Bulk Vermicompost Supply India | CROPUS',
+    description: 'Request bulk vermicompost supply for farms, nurseries, agri distributors, organic stores, FPOs, and private label buyers.',
   }
 };
 

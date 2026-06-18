@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import WireframeImage from '../../../components/cropus/WireframeImage';
 import PackSelector from '../../../components/cropus/PackSelector';
@@ -16,7 +17,7 @@ import LocalShippingIcon from '../../../components/cropus/icons/LocalShippingIco
 
 export default function ProductDetailClient({ slug }) {
   const router = useRouter();
-  const { addToCart } = useCart();
+  const { addToCart, openCartDrawer } = useCart();
   const [quantity, setQuantity] = useState(1);
 
   // Find target blend
@@ -49,10 +50,11 @@ export default function ProductDetailClient({ slug }) {
       price: selectedPack.price,
       quantity: quantity,
       region: product.region,
-      description: product.description
+      description: product.description,
+      image: product.image
     };
     addToCart(item);
-    router.push('/cart');
+    openCartDrawer();
   };
 
   const handleBuyNow = () => {
@@ -66,7 +68,8 @@ export default function ProductDetailClient({ slug }) {
       price: selectedPack.price,
       quantity: quantity,
       region: product.region,
-      description: product.description
+      description: product.description,
+      image: product.image
     };
     addToCart(item);
     router.push('/checkout');
@@ -107,10 +110,25 @@ export default function ProductDetailClient({ slug }) {
       <div className="grid grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-[#c3c8c2]/30">
         {/* Left: Images Column */}
         <div className="col-span-12 md:col-span-6 flex flex-col gap-4">
-          <WireframeImage 
-            className="aspect-square w-full rounded-lg" 
-            label={`${product.name} — ${selectedFormattedPack.id}`} 
-          />
+          {product.image ? (
+            <div className="relative aspect-square w-full bg-[#FAF6EE] border border-[#e2decb]/60 rounded-lg p-8 flex items-center justify-center overflow-hidden">
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image
+                  src={product.image}
+                  alt={`CROPUS ${product.name} region-aware vermicompost packaging`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          ) : (
+            <WireframeImage 
+              className="aspect-square w-full rounded-lg" 
+              label={`${product.name} — ${selectedFormattedPack.id}`} 
+            />
+          )}
           
           {/* Thumbnails */}
           <div className="grid grid-cols-3 gap-3">

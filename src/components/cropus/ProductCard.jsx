@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import WireframeImage from './WireframeImage';
 import CTAButton from './CTAButton';
 import PackSelector from './PackSelector';
@@ -12,7 +13,7 @@ export default function ProductCard({ product, preSelectedSize }) {
   // Default to 5kg pack size (index 1) if available, else first one
   const defaultPack = product.packSizes[1] || product.packSizes[0];
   const [selectedPack, setSelectedPack] = useState(defaultPack);
-  const { cartItems, addToCart, updateQuantity, removeFromCart } = useCart();
+  const { cartItems, addToCart, updateQuantity, removeFromCart, openCartDrawer } = useCart();
 
   useEffect(() => {
     if (preSelectedSize && preSelectedSize !== 'All') {
@@ -41,10 +42,12 @@ export default function ProductCard({ product, preSelectedSize }) {
       price: selectedPack.price,
       quantity: 1,
       region: product.region,
-      description: product.description
+      description: product.description,
+      image: product.image
     };
     
     addToCart(item);
+    openCartDrawer();
   };
 
   const handleIncreaseQuantity = () => {
@@ -72,11 +75,29 @@ export default function ProductCard({ product, preSelectedSize }) {
   }));
 
   return (
-    <div className="border border-[#c3c8c2] bg-[#fcf9f3]/40 rounded-lg overflow-visible flex flex-col group hover:border-[#C6A15B] transition-colors duration-300 relative">
-      {/* Visual Placeholder */}
-      <Link href={`/product/${product.slug}`} className="block relative aspect-square w-full cursor-pointer">
-        <WireframeImage className="w-full h-full border-0 rounded-t-lg" label={selectedPack.label} />
-      </Link>
+    <div className="h-full border border-[#c3c8c2] bg-[#fcf9f3]/40 rounded-lg overflow-visible flex flex-col group hover:border-[#C6A15B] transition-colors duration-300 relative">
+      {/* Product Image or Visual Placeholder */}
+      {product.image ? (
+        <Link 
+          href={`/product/${product.slug}`} 
+          className="block relative aspect-square w-full cursor-pointer bg-[#FAF6EE] border-b border-[#e2decb]/60 rounded-t-lg p-6 flex items-center justify-center overflow-hidden"
+        >
+          <div className="relative w-full h-full flex items-center justify-center">
+            <Image
+              src={product.image}
+              alt={`CROPUS ${product.name} region-aware vermicompost packaging`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority={product.id === 'kashmir-blend'}
+            />
+          </div>
+        </Link>
+      ) : (
+        <Link href={`/product/${product.slug}`} className="block relative aspect-square w-full cursor-pointer">
+          <WireframeImage className="w-full h-full border-0 rounded-t-lg" label={selectedPack.label} />
+        </Link>
+      )}
 
       {/* Content */}
       <div className="p-5 flex flex-col gap-4 flex-1">
@@ -84,7 +105,7 @@ export default function ProductCard({ product, preSelectedSize }) {
           <Link href={`/product/${product.slug}`} className="font-fraunces text-lg font-bold text-[#111111] hover:text-[#C6A15B] transition-colors leading-snug cursor-pointer">
             {product.name}
           </Link>
-          <p className="text-[#6F6A63] text-xs leading-relaxed">
+          <p className="text-[#6F6A63] text-xs leading-relaxed min-h-[48px] md:min-h-[56px]">
             {product.description}
           </p>
         </div>

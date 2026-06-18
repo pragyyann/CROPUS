@@ -6,11 +6,11 @@ import EcoIcon from '../../components/cropus/icons/EcoIcon';
 import CancelIcon from '../../components/cropus/icons/CancelIcon';
 
 export const metadata = {
-  title: 'About Us | CROPUS Vermicompost',
-  description: 'Learn about CROPUS Vermicompost INDIA LLP and our Soil-First Philosophy, delivering tailored, region-aware organic compost formulations.',
+  title: 'About CROPUS | Region-Aware Vermicompost India',
+  description: 'Learn how CROPUS approaches vermicompost through Indian soil diversity, regional climate, crop needs, and responsible soil-first thinking.',
   openGraph: {
-    title: 'About Us | CROPUS Vermicompost',
-    description: 'Learn about CROPUS Vermicompost INDIA LLP and our Soil-First Philosophy, delivering tailored, region-aware organic compost formulations.',
+    title: 'About CROPUS | Region-Aware Vermicompost India',
+    description: 'Learn how CROPUS approaches vermicompost through Indian soil diversity, regional climate, crop needs, and responsible soil-first thinking.',
   }
 };
 

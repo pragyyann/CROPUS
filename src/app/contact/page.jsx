@@ -2,11 +2,11 @@ import React from 'react';
 import ContactClient from './ContactClient';
 
 export const metadata = {
-  title: 'Contact Us | CROPUS Vermicompost',
-  description: 'Submit inquiries regarding CROPUS small packs, regional logistics, custom formulations, or distribution partnerships.',
+  title: 'Contact CROPUS | Vermicompost & Bulk Compost Inquiries',
+  description: 'Contact CROPUS for vermicompost orders, state blend recommendations, bulk supply, partnerships, and product inquiries.',
   openGraph: {
-    title: 'Contact Us | CROPUS Vermicompost',
-    description: 'Submit inquiries regarding CROPUS small packs, regional logistics, custom formulations, or distribution partnerships.',
+    title: 'Contact CROPUS | Vermicompost & Bulk Compost Inquiries',
+    description: 'Contact CROPUS for vermicompost orders, state blend recommendations, bulk supply, partnerships, and product inquiries.',
   }
 };
 

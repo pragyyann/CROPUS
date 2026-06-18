@@ -17,6 +17,7 @@ export const products = [
     description: 'For colder soil conditions, orchard crops, and moisture-sensitive regions.',
     region: 'Kashmir',
     recommendedFor: 'Apples, saffron, almonds, cold-hardy orchard vegetables.',
+    image: '/images/product/kashmir-blend.png',
     packSizes: [
       { label: '1kg', price: 499 },
       { label: '5kg', price: 1299 },
@@ -31,6 +32,7 @@ export const products = [
     description: 'For dry heat, moisture retention needs, and soil structure support.',
     region: 'Gujarat',
     recommendedFor: 'Cotton, groundnuts, cumin, citrus, arid-zone fruits.',
+    image: '/images/product/gujarat-blend.png',
     packSizes: [
       { label: '1kg', price: 499 },
       { label: '5kg', price: 1299 },
@@ -45,6 +47,7 @@ export const products = [
     description: 'For high-crop-cycle agricultural belts and soil recovery.',
     region: 'Punjab / Haryana',
     recommendedFor: 'Wheat, paddy, sugarcane, mustard, intense rotation crops.',
+    image: '/images/product/punjab-haryana-blend.png',
     packSizes: [
       { label: '1kg', price: 499 },
       { label: '5kg', price: 1299 },
@@ -151,45 +154,87 @@ export const checkoutSummaryMock = {
 
 export const regionalBlendsDetailed = [
   {
-    name: 'Kashmir Blend',
+    id: 'kashmir-blend',
     code: 'REG_N_KAS',
-    climate: 'Cold Temperature & Orchard Soils',
-    crops: 'Apples, saffron, stone fruits, almonds, cold-hardy vegetables.',
-    supports: 'Formulated to withstand low biological activity in cold temperatures, keeping roots active and supporting organic absorption in clay-loam orchard beds.'
+    name: 'Kashmir Blend',
+    slug: 'kashmir-blend',
+    shortDescription: 'For colder soil conditions, orchard crops, and moisture-sensitive regions.',
+    bestFor: 'Cold valleys, orchard farms, saffron fields, stone fruits, almonds, and cold-hardy vegetables.',
+    targetClimateSoil: 'Cold temperature zones, clay-loam orchard beds, moisture-sensitive soils.',
+    commonCropTargets: 'Apples, saffron, stone fruits, almonds, cold-hardy vegetables.',
+    formulationSupport: 'Formulated to withstand low biological activity in cold temperatures, keeping roots active and supporting organic absorption in clay-loam orchard beds.',
+    howItHelps: 'Supports root-zone conditioning, organic matter availability, and moisture balance in colder growing conditions.',
+    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    ctaPath: '/product/kashmir-blend'
   },
   {
-    name: 'Gujarat Blend',
+    id: 'gujarat-blend',
     code: 'REG_W_GUJ',
-    climate: 'Dry Heat & Heavy Salinity',
-    crops: 'Cotton, groundnuts, cumin, citrus, arid-zone fruits.',
-    supports: 'Engineered for high water retention and porosity restoration to assist plants in saline conditions and reduce transpiration stress in sandy soils.'
+    name: 'Gujarat Blend',
+    slug: 'gujarat-blend',
+    shortDescription: 'For dry heat, moisture retention needs, and soil structure support.',
+    bestFor: 'Dryland farms, sandy soils, salinity-prone regions, cotton, groundnuts, cumin, citrus, and arid-zone fruits.',
+    targetClimateSoil: 'Dry heat, sandy soil, heavy salinity, low moisture retention.',
+    commonCropTargets: 'Cotton, groundnuts, cumin, citrus, arid-zone fruits.',
+    formulationSupport: 'Engineered for high water retention and porosity restoration to assist plants in saline conditions and reduce transpiration stress in sandy soils.',
+    howItHelps: 'Supports soil structure, root-zone moisture retention, and long-term organic matter improvement in dry growing belts.',
+    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    ctaPath: '/product/gujarat-blend'
   },
   {
-    name: 'Punjab / Haryana Blend',
+    id: 'punjab-haryana-blend',
     code: 'REG_N_PB_HR',
-    climate: 'High crop cycle exhaustion recovery',
-    crops: 'Wheat, paddy, sugarcane, mustard, high-density grain farms.',
-    supports: 'Optimized for fast soil carbon restoration and cellular structure conditioning after intense synthetic fertilizers crop rotation cycles.'
+    name: 'Punjab / Haryana Blend',
+    slug: 'punjab-haryana-blend',
+    shortDescription: 'For high-crop-cycle agricultural belts and soil recovery.',
+    bestFor: 'Wheat, paddy, sugarcane, mustard, high-density grain farms, and exhausted agricultural soils.',
+    targetClimateSoil: 'High crop cycle exhaustion recovery, intensive cultivation belts, soil carbon depletion.',
+    commonCropTargets: 'Wheat, paddy, sugarcane, mustard, high-density grain farms.',
+    formulationSupport: 'Optimized for fast soil carbon restoration and cellular structure conditioning after intense fertilizer-heavy crop rotation cycles.',
+    howItHelps: 'Supports recovery of soil structure, organic matter, and long-term crop-cycle resilience.',
+    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    ctaPath: '/product/punjab-haryana-blend'
   },
   {
-    name: 'South India Blend',
+    id: 'south-india-blend',
     code: 'REG_S_HUM',
-    climate: 'Humid High-Rainfall Plantation',
-    crops: 'Coffee, tea, cardamom, pepper, coconut, rubber, plantation crops.',
-    supports: 'Specialized formulation preventing fast biological decay in hot/humid environments while sustaining slow-release organic micro-nutrients.'
+    name: 'South India Blend',
+    slug: 'south-india-blend',
+    shortDescription: 'For humid regions, plantation crops, and organic matter support.',
+    bestFor: 'Coffee, tea, cardamom, pepper, coconut, rubber, plantation crops, and humid high-rainfall regions.',
+    targetClimateSoil: 'Humid high-rainfall plantation zones, laterite-rich soils, moisture-heavy growing regions.',
+    commonCropTargets: 'Coffee, tea, cardamom, pepper, coconut, rubber, plantation crops.',
+    formulationSupport: 'Built to support organic matter stability in humid soils and improve root-zone conditioning in plantation crop systems.',
+    howItHelps: 'Supports moisture-rich soil balance, biological activity, and long-term soil texture improvement in humid regions.',
+    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    ctaPath: '/product/south-india-blend'
   },
   {
-    name: 'Central India Blend',
+    id: 'central-india-blend',
     code: 'REG_C_IND',
-    climate: 'Clayey Black Cotton Soils',
-    crops: 'Soybeans, cotton, pulses, oilseeds, wheat.',
-    supports: 'Formulated with structure-loosening agents to increase air circulation and water percolation in sticky, heavy black soil systems.'
+    name: 'Central India Blend',
+    slug: 'central-india-blend',
+    shortDescription: 'For mixed farming, dryland agriculture, and soil conditioning.',
+    bestFor: 'Soybeans, cotton, pulses, oilseeds, wheat, mixed farming, and black cotton soil regions.',
+    targetClimateSoil: 'Clayey black cotton soils, mixed dryland farms, variable rainfall regions.',
+    commonCropTargets: 'Soybeans, cotton, pulses, oilseeds, wheat.',
+    formulationSupport: 'Designed to improve soil conditioning, organic matter support, and root-zone balance across mixed farming conditions.',
+    howItHelps: 'Supports soil texture, moisture behavior, and organic structure in variable central Indian farm conditions.',
+    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    ctaPath: '/product/central-india-blend'
   },
   {
-    name: 'Not Sure / General Blend',
+    id: 'general-blend',
     code: 'REG_GEN_ALL',
-    climate: 'General Agricultural Conditions',
-    crops: 'All domestic crops, home garden mixtures, potting soils.',
-    supports: 'A balanced microbial active formula designed to satisfy standard domestic conditioning requirements across general Indian soils.'
+    name: 'Not Sure / General Blend',
+    slug: 'general-blend',
+    shortDescription: 'For guided selection and general agricultural soil conditioning.',
+    bestFor: 'Home gardens, potting soils, domestic crops, nurseries, and buyers unsure of their regional blend.',
+    targetClimateSoil: 'General agricultural conditions and mixed soil types.',
+    commonCropTargets: 'All domestic crops, home garden mixtures, potting soils.',
+    formulationSupport: 'A balanced starting formulation for users who need general soil conditioning before selecting a more specific regional blend.',
+    howItHelps: 'Provides a simple entry point for soil improvement while guiding users toward better region-specific selection.',
+    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    ctaPath: '/product/general-blend'
   }
 ];

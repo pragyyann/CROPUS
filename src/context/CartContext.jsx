@@ -7,6 +7,10 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
+
+  const openCartDrawer = () => setIsCartDrawerOpen(true);
+  const closeCartDrawer = () => setIsCartDrawerOpen(false);
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -72,7 +76,10 @@ export function CartProvider({ children }) {
       updateQuantity,
       clearCart,
       cartCount,
-      cartSubtotal
+      cartSubtotal,
+      isCartDrawerOpen,
+      openCartDrawer,
+      closeCartDrawer
     }}>
       {children}
     </CartContext.Provider>
@@ -90,7 +97,10 @@ export function useCart() {
       updateQuantity: () => {},
       clearCart: () => {},
       cartCount: 0,
-      cartSubtotal: 0
+      cartSubtotal: 0,
+      isCartDrawerOpen: false,
+      openCartDrawer: () => {},
+      closeCartDrawer: () => {}
     };
   }
   return context;

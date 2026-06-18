@@ -12,7 +12,7 @@ import CloseIcon from './icons/CloseIcon';
 export default function CropusNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { cartCount } = useCart();
+  const { cartCount, openCartDrawer, isCartDrawerOpen } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
 
   const isHomePage = pathname === '/';
@@ -27,6 +27,27 @@ export default function CropusNavbar() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const handleMobileLinkClick = () => {
@@ -103,10 +124,10 @@ export default function CropusNavbar() {
       <div className="flex-1 flex justify-end items-center gap-4">
         {/* Desktop Cart Action */}
         <div className="hidden lg:flex items-center">
-          <Link 
-            href="/cart"
-            className={`flex items-center gap-2 px-3 py-1.5 border rounded-md font-mono-plex text-[10px] uppercase tracking-widest transition-all duration-200 ${
-              pathname === '/cart'
+          <button 
+            onClick={openCartDrawer}
+            className={`flex items-center gap-2 px-3 py-1.5 border rounded-md font-mono-plex text-[10px] uppercase tracking-widest transition-all duration-200 cursor-pointer ${
+              isCartDrawerOpen
                 ? 'bg-[#C6A15B]/10 border-[#C6A15B] text-[#C6A15B]' 
                 : 'border-[#c3c8c2]/20 text-[#F7F3EA]/80 hover:text-[#C6A15B] hover:border-[#C6A15B]/50'
             }`}
@@ -114,16 +135,15 @@ export default function CropusNavbar() {
           >
             <ShoppingBagIcon className="h-4 w-4" />
             <span>Cart ({cartCount})</span>
-          </Link>
+          </button>
         </div>
 
         {/* Mobile Actions */}
         <div className="lg:hidden flex items-center gap-3">
-          <Link 
-            href="/cart"
-            onClick={handleMobileLinkClick}
-            className={`flex items-center gap-1.5 px-2.5 py-1.5 border rounded-md font-mono-plex text-[9px] uppercase tracking-widest transition-all duration-200 ${
-              pathname === '/cart'
+          <button 
+            onClick={openCartDrawer}
+            className={`flex items-center gap-1.5 px-2.5 py-1.5 border rounded-md font-mono-plex text-[9px] uppercase tracking-widest transition-all duration-200 cursor-pointer ${
+              isCartDrawerOpen
                 ? 'bg-[#C6A15B]/10 border-[#C6A15B] text-[#C6A15B]' 
                 : 'border-[#c3c8c2]/20 text-[#F7F3EA]/80 hover:text-[#C6A15B] hover:border-[#C6A15B]/50'
             }`}
@@ -131,7 +151,7 @@ export default function CropusNavbar() {
           >
             <ShoppingBagIcon className="h-3.5 w-3.5" />
             <span>({cartCount})</span>
-          </Link>
+          </button>
           
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -211,19 +231,19 @@ export default function CropusNavbar() {
             <span>Contact</span>
             <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
-          <Link 
-            href="/cart" 
-            onClick={handleMobileLinkClick}
-            className={`font-mono-plex text-[10px] uppercase tracking-widest py-3 transition-colors duration-200 flex justify-between items-center ${
-              pathname === '/cart' ? 'text-[#C6A15B] font-bold' : 'text-[#F7F3EA]/80 hover:text-[#C6A15B]'
-            }`}
+          <button 
+            onClick={() => {
+              handleMobileLinkClick();
+              openCartDrawer();
+            }}
+            className="font-mono-plex text-[10px] uppercase tracking-widest py-3 transition-colors duration-200 flex justify-between items-center text-left w-full cursor-pointer text-[#F7F3EA]/80 hover:text-[#C6A15B]"
           >
             <span className="flex items-center gap-2">
               <ShoppingBagIcon className="h-3.5 w-3.5" />
               <span>Cart ({cartCount})</span>
             </span>
             <ArrowRightIcon className="h-3.5 w-3.5" />
-          </Link>
+          </button>
         </div>
       )}
     </nav>

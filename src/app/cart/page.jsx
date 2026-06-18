@@ -2,11 +2,11 @@ import React from 'react';
 import CartClient from './CartClient';
 
 export const metadata = {
-  title: 'Your Cart | CROPUS Vermicompost',
-  description: 'Review your selected CROPUS region-specific vermicompost blends and configure quantities before checkout.',
+  title: 'Cart | CROPUS Vermicompost',
+  description: 'Review selected CROPUS vermicompost packs before checkout.',
   openGraph: {
-    title: 'Your Cart | CROPUS Vermicompost',
-    description: 'Review your selected CROPUS region-specific vermicompost blends and configure quantities before checkout.',
+    title: 'Cart | CROPUS Vermicompost',
+    description: 'Review selected CROPUS vermicompost packs before checkout.',
   }
 };
 

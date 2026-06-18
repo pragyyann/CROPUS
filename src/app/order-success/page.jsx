@@ -3,8 +3,8 @@ import Link from 'next/link';
 import ScienceIcon from '../../components/cropus/icons/ScienceIcon';
 
 export const metadata = {
-  title: 'Order Status | CROPUS Vermicompost',
-  description: 'Track the status of your region-aware vermicompost supply and logistics coordinates.',
+  title: 'Order Success Preview | CROPUS Vermicompost',
+  description: 'Order confirmation preview for CROPUS vermicompost purchases.',
   robots: {
     index: false,
     follow: false
