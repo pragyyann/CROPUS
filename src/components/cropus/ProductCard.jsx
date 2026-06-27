@@ -17,14 +17,14 @@ export default function ProductCard({ product, preSelectedSize }) {
 
   useEffect(() => {
     if (preSelectedSize && preSelectedSize !== 'All') {
-      const targetPack = product.packSizes.find(p => p.label === preSelectedSize);
+      const targetPack = product.packSizes.find(p => p.weight === preSelectedSize);
       if (targetPack) {
         setSelectedPack(targetPack);
       }
     }
   }, [preSelectedSize, product.packSizes]);
 
-  const itemId = `${product.id}-${selectedPack.label}`;
+  const itemId = `${product.id}-${selectedPack.weight}`;
   const existingCartItem = cartItems.find(item => item.id === itemId);
   const currentQuantity = existingCartItem ? existingCartItem.quantity : 0;
 

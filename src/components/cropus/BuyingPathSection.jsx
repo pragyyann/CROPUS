@@ -38,7 +38,7 @@ export default function BuyingPathSection() {
                 Available Sizes
               </span>
               <div className="flex flex-wrap gap-2">
-                {['1kg', '5kg', '10kg', '25kg'].map(size => (
+                {['2KG', '5KG', '10KG', '50KG'].map(size => (
                   <span key={size} className="px-2.5 py-1 bg-[#F7F3EA] border border-[#c3c8c2] text-xs font-mono-plex text-[#111111]">
                     {size}
                   </span>

@@ -137,7 +137,7 @@ export default function CartDrawer() {
                         {item.blendName || item.name}
                       </h4>
                       <span className="font-mono-plex text-[8px] text-[#7A5F45] uppercase tracking-wider font-semibold mt-1">
-                        {item.packSize} Pack • {item.region} Blend
+                        {item.packSize.endsWith('Pack') ? item.packSize : `${item.packSize} Pack`} • {item.region} Blend
                       </span>
                     </div>
 

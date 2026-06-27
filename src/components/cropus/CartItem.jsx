@@ -13,7 +13,7 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }) {
           <h4 className="font-fraunces text-base md:text-lg font-bold text-[#111111]">{item.blendName || item.name}</h4>
           <div className="flex flex-wrap gap-2 items-center">
             <span className="font-mono-plex text-[9px] text-[#7A5F45] bg-[#EFE8DC] px-2 py-0.5 rounded-xs border border-[#c3c8c2]/30 uppercase tracking-widest">
-              {sizeLabel} Pack
+              {sizeLabel.endsWith('Pack') ? sizeLabel : `${sizeLabel} Pack`}
             </span>
             <span className="font-mono-plex text-[9px] text-[#6F6A63] bg-white px-2 py-0.5 rounded-xs border border-[#c3c8c2]/50 uppercase tracking-widest">
               {item.region} Blend

@@ -15,7 +15,7 @@ export default function ShopClient() {
     return matchesRegion;
   });
 
-  const sizes = ['All', '1kg', '5kg', '10kg', '25kg'];
+  const sizes = ['All', '2kg', '5kg', '10kg', '50kg'];
   const regions = ['All', ...regionOptions];
 
   return (
@@ -66,7 +66,7 @@ export default function ShopClient() {
                     : 'border-[#c3c8c2] text-[#6F6A63] hover:border-[#111111] hover:text-[#111111] bg-white/40'
                 }`}
               >
-                {size === 'All' ? 'Default (5kg)' : `${size} Sack`}
+                {size === 'All' ? 'Default (5kg)' : `${size.toUpperCase()} Sack`}
               </button>
             ))}
           </div>

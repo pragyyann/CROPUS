@@ -6,12 +6,12 @@ export default function PackagingSnapshotSection() {
   const packagingRows = [
     {
       category: 'Small Packs',
-      sizes: '1kg / 5kg',
+      sizes: '2KG / 5KG',
       target: 'Home gardens, trial buyers, and indoor plants.'
     },
     {
       category: 'Retail Packs',
-      sizes: '10kg / 25kg',
+      sizes: '10KG / 50KG',
       target: 'Medium gardens, boutique nurseries, and small organic farms.'
     },
     {

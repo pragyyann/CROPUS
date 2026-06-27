@@ -18,7 +18,19 @@ export function CartProvider({ children }) {
       const stored = localStorage.getItem('cropus_cart');
       if (stored) {
         try {
-          setCartItems(JSON.parse(stored));
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed)) {
+            const validWeights = ['2kg', '5kg', '10kg', '50kg'];
+            const migratedItems = parsed.filter(item => {
+              if (!item || !item.id) return false;
+              const idParts = item.id.split('-');
+              const weightSuffix = idParts[idParts.length - 1];
+              return validWeights.includes(weightSuffix);
+            });
+            setCartItems(migratedItems);
+          } else {
+            setCartItems([]);
+          }
         } catch (e) {
           console.error("Failed to parse cart items", e);
         }

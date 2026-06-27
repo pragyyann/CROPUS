@@ -19,10 +19,10 @@ export const products = [
     recommendedFor: 'Apples, saffron, almonds, cold-hardy orchard vegetables.',
     image: '/images/product/kashmir-blend.png',
     packSizes: [
-      { label: '1kg', price: 499 },
-      { label: '5kg', price: 1299 },
-      { label: '10kg', price: 2299 },
-      { label: '25kg', price: 4999 }
+      { label: "2KG Pack", weight: "2kg", price: 150 },
+      { label: "5KG Pack", weight: "5kg", price: 300 },
+      { label: "10KG Pack", weight: "10kg", price: 500 },
+      { label: "50KG Pack", weight: "50kg", price: 2100 }
     ]
   },
   {
@@ -34,10 +34,10 @@ export const products = [
     recommendedFor: 'Cotton, groundnuts, cumin, citrus, arid-zone fruits.',
     image: '/images/product/gujarat-blend.png',
     packSizes: [
-      { label: '1kg', price: 499 },
-      { label: '5kg', price: 1299 },
-      { label: '10kg', price: 2299 },
-      { label: '25kg', price: 4999 }
+      { label: "2KG Pack", weight: "2kg", price: 150 },
+      { label: "5KG Pack", weight: "5kg", price: 300 },
+      { label: "10KG Pack", weight: "10kg", price: 500 },
+      { label: "50KG Pack", weight: "50kg", price: 2100 }
     ]
   },
   {
@@ -49,10 +49,10 @@ export const products = [
     recommendedFor: 'Wheat, paddy, sugarcane, mustard, intense rotation crops.',
     image: '/images/product/punjab-haryana-blend.png',
     packSizes: [
-      { label: '1kg', price: 499 },
-      { label: '5kg', price: 1299 },
-      { label: '10kg', price: 2299 },
-      { label: '25kg', price: 4999 }
+      { label: "2KG Pack", weight: "2kg", price: 150 },
+      { label: "5KG Pack", weight: "5kg", price: 300 },
+      { label: "10KG Pack", weight: "10kg", price: 500 },
+      { label: "50KG Pack", weight: "50kg", price: 2100 }
     ]
   },
   {
@@ -63,10 +63,10 @@ export const products = [
     region: 'South India',
     recommendedFor: 'Coffee, tea, cardamom, pepper, coconut, rubber plantation.',
     packSizes: [
-      { label: '1kg', price: 499 },
-      { label: '5kg', price: 1299 },
-      { label: '10kg', price: 2299 },
-      { label: '25kg', price: 4999 }
+      { label: "2KG Pack", weight: "2kg", price: 150 },
+      { label: "5KG Pack", weight: "5kg", price: 300 },
+      { label: "10KG Pack", weight: "10kg", price: 500 },
+      { label: "50KG Pack", weight: "50kg", price: 2100 }
     ]
   },
   {
@@ -77,10 +77,10 @@ export const products = [
     region: 'Central India',
     recommendedFor: 'Soybeans, cotton, pulses, oilseeds, wheat.',
     packSizes: [
-      { label: '1kg', price: 499 },
-      { label: '5kg', price: 1299 },
-      { label: '10kg', price: 2299 },
-      { label: '25kg', price: 4999 }
+      { label: "2KG Pack", weight: "2kg", price: 150 },
+      { label: "5KG Pack", weight: "5kg", price: 300 },
+      { label: "10KG Pack", weight: "10kg", price: 500 },
+      { label: "50KG Pack", weight: "50kg", price: 2100 }
     ]
   },
   {
@@ -91,10 +91,10 @@ export const products = [
     region: 'Not Sure',
     recommendedFor: 'Domestic plants, balcony gardening, mixed potting mixes.',
     packSizes: [
-      { label: '1kg', price: 499 },
-      { label: '5kg', price: 1299 },
-      { label: '10kg', price: 2299 },
-      { label: '25kg', price: 4999 }
+      { label: "2KG Pack", weight: "2kg", price: 150 },
+      { label: "5KG Pack", weight: "5kg", price: 300 },
+      { label: "10KG Pack", weight: "10kg", price: 500 },
+      { label: "50KG Pack", weight: "50kg", price: 2100 }
     ]
   }
 ];
@@ -145,11 +145,11 @@ export const checkoutSummaryMock = {
   productName: 'CROPUS Vermicompost – Gujarat Blend',
   regionSelected: 'Gujarat',
   quantity: 2,
-  pricePerUnit: 1299,
-  subtotal: 2598,
+  pricePerUnit: 300,
+  subtotal: 600,
   deliveryCharge: 80,
   taxText: 'Included',
-  total: 2678
+  total: 680
 };
 
 export const regionalBlendsDetailed = [
@@ -161,10 +161,10 @@ export const regionalBlendsDetailed = [
     shortDescription: 'For colder soil conditions, orchard crops, and moisture-sensitive regions.',
     bestFor: 'Cold valleys, orchard farms, saffron fields, stone fruits, almonds, and cold-hardy vegetables.',
     targetClimateSoil: 'Cold temperature zones, clay-loam orchard beds, moisture-sensitive soils.',
-    commonCropTargets: 'Apples, saffron, stone fruits, almonds, cold-hardy vegetables.',
+    commonCropTargets: 'Apple, saffron, almond, walnut, pear, cherry, apricot, plum.',
     formulationSupport: 'Formulated to withstand low biological activity in cold temperatures, keeping roots active and supporting organic absorption in clay-loam orchard beds.',
     howItHelps: 'Supports root-zone conditioning, organic matter availability, and moisture balance in colder growing conditions.',
-    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    recommendedPacks: '2KG / 5KG / 10KG / 50KG',
     ctaPath: '/product/kashmir-blend'
   },
   {
@@ -175,10 +175,10 @@ export const regionalBlendsDetailed = [
     shortDescription: 'For dry heat, moisture retention needs, and soil structure support.',
     bestFor: 'Dryland farms, sandy soils, salinity-prone regions, cotton, groundnuts, cumin, citrus, and arid-zone fruits.',
     targetClimateSoil: 'Dry heat, sandy soil, heavy salinity, low moisture retention.',
-    commonCropTargets: 'Cotton, groundnuts, cumin, citrus, arid-zone fruits.',
+    commonCropTargets: 'Cotton, groundnut, cumin, castor, bajra, sesame, citrus, mango.',
     formulationSupport: 'Engineered for high water retention and porosity restoration to assist plants in saline conditions and reduce transpiration stress in sandy soils.',
     howItHelps: 'Supports soil structure, root-zone moisture retention, and long-term organic matter improvement in dry growing belts.',
-    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    recommendedPacks: '2KG / 5KG / 10KG / 50KG',
     ctaPath: '/product/gujarat-blend'
   },
   {
@@ -189,10 +189,10 @@ export const regionalBlendsDetailed = [
     shortDescription: 'For high-crop-cycle agricultural belts and soil recovery.',
     bestFor: 'Wheat, paddy, sugarcane, mustard, high-density grain farms, and exhausted agricultural soils.',
     targetClimateSoil: 'High crop cycle exhaustion recovery, intensive cultivation belts, soil carbon depletion.',
-    commonCropTargets: 'Wheat, paddy, sugarcane, mustard, high-density grain farms.',
+    commonCropTargets: 'Wheat, paddy, sugarcane, mustard, maize, potato, cotton, barley.',
     formulationSupport: 'Optimized for fast soil carbon restoration and cellular structure conditioning after intense fertilizer-heavy crop rotation cycles.',
     howItHelps: 'Supports recovery of soil structure, organic matter, and long-term crop-cycle resilience.',
-    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    recommendedPacks: '2KG / 5KG / 10KG / 50KG',
     ctaPath: '/product/punjab-haryana-blend'
   },
   {
@@ -203,10 +203,10 @@ export const regionalBlendsDetailed = [
     shortDescription: 'For humid regions, plantation crops, and organic matter support.',
     bestFor: 'Coffee, tea, cardamom, pepper, coconut, rubber, plantation crops, and humid high-rainfall regions.',
     targetClimateSoil: 'Humid high-rainfall plantation zones, laterite-rich soils, moisture-heavy growing regions.',
-    commonCropTargets: 'Coffee, tea, cardamom, pepper, coconut, rubber, plantation crops.',
+    commonCropTargets: 'Coffee, tea, cardamom, pepper, coconut, banana, rubber, turmeric.',
     formulationSupport: 'Built to support organic matter stability in humid soils and improve root-zone conditioning in plantation crop systems.',
     howItHelps: 'Supports moisture-rich soil balance, biological activity, and long-term soil texture improvement in humid regions.',
-    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    recommendedPacks: '2KG / 5KG / 10KG / 50KG',
     ctaPath: '/product/south-india-blend'
   },
   {
@@ -217,10 +217,10 @@ export const regionalBlendsDetailed = [
     shortDescription: 'For mixed farming, dryland agriculture, and soil conditioning.',
     bestFor: 'Soybeans, cotton, pulses, oilseeds, wheat, mixed farming, and black cotton soil regions.',
     targetClimateSoil: 'Clayey black cotton soils, mixed dryland farms, variable rainfall regions.',
-    commonCropTargets: 'Soybeans, cotton, pulses, oilseeds, wheat.',
+    commonCropTargets: 'Soybean, cotton, chickpea, pigeon pea, wheat, maize, linseed, mustard.',
     formulationSupport: 'Designed to improve soil conditioning, organic matter support, and root-zone balance across mixed farming conditions.',
     howItHelps: 'Supports soil texture, moisture behavior, and organic structure in variable central Indian farm conditions.',
-    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    recommendedPacks: '2KG / 5KG / 10KG / 50KG',
     ctaPath: '/product/central-india-blend'
   },
   {
@@ -231,10 +231,10 @@ export const regionalBlendsDetailed = [
     shortDescription: 'For guided selection and general agricultural soil conditioning.',
     bestFor: 'Home gardens, potting soils, domestic crops, nurseries, and buyers unsure of their regional blend.',
     targetClimateSoil: 'General agricultural conditions and mixed soil types.',
-    commonCropTargets: 'All domestic crops, home garden mixtures, potting soils.',
+    commonCropTargets: 'Tomato, chilli, brinjal, okra, spinach, coriander, rose, marigold.',
     formulationSupport: 'A balanced starting formulation for users who need general soil conditioning before selecting a more specific regional blend.',
     howItHelps: 'Provides a simple entry point for soil improvement while guiding users toward better region-specific selection.',
-    recommendedPacks: '1kg / 5kg / 10kg / 25kg',
+    recommendedPacks: '2KG / 5KG / 10KG / 50KG',
     ctaPath: '/product/general-blend'
   }
 ];

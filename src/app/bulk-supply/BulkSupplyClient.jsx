@@ -13,7 +13,7 @@ export default function BulkSupplyClient() {
   };
 
   const formats = [
-    { title: 'Retail Packs', detail: '10kg / 25kg standard woven sacks.', target: 'Ideal for retail distribution and nurseries.' },
+    { title: 'Retail Packs', detail: '10kg / 50kg standard woven sacks.', target: 'Ideal for retail distribution and nurseries.' },
     { title: 'Bulk Supply', detail: '100kg / 500kg / 1T+ high-density jumbo bags.', target: 'Designed for commercial farming setups and estate storage.' },
     { title: 'Private Label', detail: 'Full branding support and packing specifications.', target: 'For retail brands looking to source quality inputs.' },
     { title: 'Custom Packaging', detail: 'Weatherproof liners and specialized sacks on request.', target: 'For moisture-sensitive regions and open-transit logistics.' },

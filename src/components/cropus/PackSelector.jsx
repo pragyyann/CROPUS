@@ -42,7 +42,7 @@ export default function PackSelector({ selectedPackId, packs, onChange, classNam
           className="w-full h-11 md:h-12 px-4 bg-[#FCF9F3] border border-[#B8AAA3] rounded-md text-left flex justify-between items-center text-[#111111] hover:border-[#111111] transition-colors focus:outline-none cursor-pointer"
         >
           <span className="font-mono-plex text-xs font-semibold">
-            {selectedPack.id} Pack
+            {selectedPack.id.endsWith('Pack') ? selectedPack.id : `${selectedPack.id} Pack`}
           </span>
           <div className="flex items-center gap-3">
             <span className="font-fraunces text-sm font-bold text-[#111111]">
@@ -71,7 +71,7 @@ export default function PackSelector({ selectedPackId, packs, onChange, classNam
                       : 'hover:bg-[#EFE8DC] text-[#111111] bg-[#FCF9F3]/40'
                   }`}
                 >
-                  <span className="font-mono-plex">{pack.id} Pack</span>
+                  <span className="font-mono-plex">{pack.id.endsWith('Pack') ? pack.id : `${pack.id} Pack`}</span>
                   <span className="font-fraunces font-bold text-[#111111]">
                     ₹{pack.price.toLocaleString('en-IN')}
                   </span>

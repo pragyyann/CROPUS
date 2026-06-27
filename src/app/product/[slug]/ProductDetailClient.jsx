@@ -41,7 +41,7 @@ export default function ProductDetailClient({ slug }) {
 
   const handleAddToCart = () => {
     const item = {
-      id: `${product.id}-${selectedPack.label}`,
+      id: `${product.id}-${selectedPack.weight}`,
       blendId: product.id,
       blendName: product.name,
       name: product.name,
@@ -59,7 +59,7 @@ export default function ProductDetailClient({ slug }) {
 
   const handleBuyNow = () => {
     const item = {
-      id: `${product.id}-${selectedPack.label}`,
+      id: `${product.id}-${selectedPack.weight}`,
       blendId: product.id,
       blendName: product.name,
       name: product.name,

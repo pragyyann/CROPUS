@@ -108,7 +108,7 @@ export default function HeroSection() {
                     Pack Sizes
                   </span>
                   <span className="font-mono-plex text-[11px] text-[#F7F3EA]/85 font-bold">
-                    1kg / 5kg / 10kg / 25kg
+                    2KG / 5KG / 10KG / 50KG
                   </span>
                 </div>
                 <div className="flex flex-col items-end gap-0.5">
@@ -116,7 +116,7 @@ export default function HeroSection() {
                     Price
                   </span>
                   <span className="font-fraunces text-2xl text-[#C6A15B] font-semibold leading-none">
-                    From ₹499
+                    From ₹150
                   </span>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function HeroSection() {
               02 / FLEXIBILITY
             </span>
             <span className="font-fraunces text-sm sm:text-base text-[#F7F3EA] font-semibold">
-              1kg–25kg Packs
+              2kg–50kg Packs
             </span>
           </div>
 

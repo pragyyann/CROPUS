@@ -37,22 +37,22 @@ export default function StateBlendsClient() {
                 {blend.name}
               </h3>
               
-              <p className="text-[#6F6A63] text-xs leading-relaxed italic pr-4">
+              <p className="text-neutral-700 text-xs md:text-sm leading-relaxed italic pr-4 font-medium">
                 {blend.shortDescription}
               </p>
 
-              <div className="flex flex-col gap-1 border-t border-[#c3c8c2]/20 pt-3">
-                <span className="font-mono-plex text-[8px] text-[#7A5F45] uppercase tracking-widest font-semibold">
+              <div className="flex flex-col gap-1 border-t border-[#D9D6D0] pt-3">
+                <span className="font-mono-plex text-[10px] md:text-xs font-bold tracking-[0.12em] text-[#7A5F45] uppercase">
                   Target Climate & Soil
                 </span>
-                <span className="text-xs font-semibold text-[#111111]">{blend.targetClimateSoil}</span>
+                <span className="text-sm font-semibold text-[#111111]">{blend.targetClimateSoil}</span>
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="font-mono-plex text-[8px] text-[#7A5F45] uppercase tracking-widest font-semibold">
+                <span className="font-mono-plex text-[10px] md:text-xs font-bold tracking-[0.12em] text-[#7A5F45] uppercase">
                   Common Crop Targets
                 </span>
-                <p className="text-[#6F6A63] text-xs leading-relaxed">{blend.commonCropTargets}</p>
+                <p className="text-neutral-700 text-sm leading-relaxed font-semibold">{blend.commonCropTargets}</p>
               </div>
             </div>
 
