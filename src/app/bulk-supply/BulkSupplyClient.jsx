@@ -64,10 +64,54 @@ export default function BulkSupplyClient() {
           </div>
         </div>
         <div className="col-span-12 md:col-span-6">
-          <WireframeImage 
-            className="aspect-video w-full rounded-lg" 
-            label="CROPUS Regional Bulk Storage Wireframe" 
-          />
+          <div className="bg-[#FCF9F3] border border-[#D9D6D0] border-t border-t-[#C6A15B] rounded-md p-6 shadow-sm hover:border-[#C6A15B]/70 transition-all duration-300 flex flex-col gap-5">
+            <div>
+              <span className="font-mono-plex text-[9px] text-[#C6A15B] tracking-[0.2em] uppercase font-bold block mb-1">
+                COMMERCIAL SUPPLY
+              </span>
+              <h2 className="font-fraunces text-xl font-bold text-[#111111] leading-tight">
+                Regional Bulk Supply
+              </h2>
+              <p className="text-neutral-600 text-xs mt-2 leading-relaxed">
+                For farms, nurseries, FPOs, distributors, and agri-retailers requiring 50KG+ vermicompost supply.
+              </p>
+            </div>
+
+            <div className="border-b border-[#D9D6D0]/50"></div>
+
+            <div className="flex flex-col gap-4">
+              {/* Info Rows */}
+              {[
+                { label: 'Minimum Supply', val: '50KG commercial bags' },
+                { label: 'Best For', val: 'Farms · Nurseries · FPOs · Distributors' },
+                { label: 'Order Type', val: 'One-time bulk or recurring monthly supply' },
+                { label: 'Regional Guidance', val: 'Blend suggestion based on crop and soil requirement' }
+              ].map((item, i) => (
+                <div key={i} className="flex items-start border-b border-[#D9D6D0]/40 pb-3 last:border-b-0 last:pb-0">
+                  <span className="font-mono-plex text-[10px] text-[#C6A15B] font-bold mr-3 mt-0.5">
+                    0{i + 1}
+                  </span>
+                  <div className="flex flex-col">
+                    <span className="font-mono-plex text-[9px] text-[#7A5F45] uppercase tracking-wider font-semibold">
+                      {item.label}
+                    </span>
+                    <span className="text-neutral-700 text-xs mt-0.5 leading-relaxed">
+                      {item.val}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col items-center mt-1">
+              <button 
+                onClick={handleScrollToForm}
+                className="text-[11px] text-[#7A5F45] hover:text-[#C6A15B] font-mono-plex uppercase tracking-wider font-bold underline transition-colors cursor-pointer text-center py-1"
+              >
+                Talk to our team before ordering
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
