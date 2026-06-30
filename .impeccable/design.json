@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-29T10:26:00.000Z",
+  "title": "Design System: CROPUS Design System",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Muted Gold", "canonical": "#C6A15B", "tonalRamp": ["#4a3a1f", "#6b542d", "#8c703b", "#ad8c4b", "#c6a15b", "#d4b87c", "#e3d09e", "#f1e7bf"] },
+      "charcoal": { "role": "neutral", "displayName": "Off-Black", "canonical": "#111111", "tonalRamp": ["#000000", "#111111", "#222222", "#333333", "#555555", "#777777", "#999999", "#cccccc"] },
+      "neutral-bg": { "role": "neutral", "displayName": "Warm Ivory", "canonical": "#F7F3EA", "tonalRamp": ["#b2ab9c", "#c7c0b2", "#dcd5c8", "#ede6d9", "#f7f3ea", "#faf8f4", "#fdfcf9", "#ffffff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display Title", "purpose": "Hero headlines and main page titles." },
+      "headline": { "displayName": "Section Heading", "purpose": "Major content sections." },
+      "body": { "displayName": "Body Text", "purpose": "Paragraphs and editorial prose." },
+      "label": { "displayName": "Technical Label", "purpose": "Eyebrows, buttons, and metadata." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "fade-in", "value": "fadeIn 0.2s ease-out forwards", "purpose": "Page and large section fade reveals." },
+      { "name": "scale-up", "value": "scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards", "purpose": "Modal popup entrance." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Standard primary call-to-action button.",
+      "html": "<button class=\"ds-btn-primary\">EXPLORE BLENDS</button>",
+      "css": ".ds-btn-primary { background: #111111; color: #F7F3EA; padding: 14px 32px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.3s, color 0.3s; } .ds-btn-primary:hover { background: #C6A15B; color: #111111; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Gold-accented call-to-action button.",
+      "html": "<button class=\"ds-btn-secondary\">SHOP SMALL PACKS</button>",
+      "css": ".ds-btn-secondary { background: #C6A15B; color: #111111; padding: 14px 32px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.3s, color 0.3s; } .ds-btn-secondary:hover { background: #111111; color: #C6A15B; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Agronomy Journal",
+    "overview": "The CROPUS visual system is built on the metaphor of a premium, traditional agricultural field-notebook. It rejects the hyper-clean, sterile SaaS layout language, opting instead for a tactile, editorial layout that feels grounded, authentic, and scientifically authoritative.",
+    "keyCharacteristics": [
+      "Warm parchment-like backgrounds and earthy forest tints.",
+      "Strong typographic contrast using editorial serif and technical monospace fonts.",
+      "Restrained, flat containers utilizing thin dividers and background tone shifts instead of ambient shadows.",
+      "Generous editorial spacing to allow content to breathe."
+    ],
+    "rules": [
+      { "name": "The Editorial Restraint Rule", "body": "Layouts should rely on typography and whitespace to create hierarchy. Visual decoration and container shapes should be kept to a bare minimum.", "section": "overview" },
+      { "name": "The Golden Ratio Rule", "body": "The primary Muted Gold accent color must never occupy more than 10% of any screen surface. It serves as a rare, high-value highlight.", "section": "colors" },
+      { "name": "The Typographic Balance Rule", "body": "Every major section heading must be preceded by an uppercase monospaced label kicker to anchor the hierarchy.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "All surfaces and containers are flat at rest. Ambient shadows are prohibited; subtle solid borders are the only allowed boundary indicators.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use text-wrap: balance on all h1–h3 headings to prevent awkward line wraps.",
+      "Do maintain a body text line length of 65–75ch for optimal readability.",
+      "Do use Warm Ivory (#F7F3EA) and Soft Cream (#EFE8DC) for page layouts to maintain the warm paper feel.",
+      "Do use thin, subtle dividers (1px solid #D9D6D0 or #c3c8c2/30) to separate sections."
+    ],
+    "donts": [
+      "Don't use drop shadows, box shadows, or glassmorphism effects.",
+      "Don't use neon or vibrant digital colors (pure reds, blues, greens, or purples).",
+      "Don't use side-stripe borders (e.g. border-left-4 as a decorative accent).",
+      "Don't use gradient text or background-clip text.",
+      "Don't use identical, repeating card grids without visual variation or editorial asymmetry."
+    ]
+  }
+}

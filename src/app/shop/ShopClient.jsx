@@ -9,14 +9,19 @@ export default function ShopClient() {
   const [selectedRegionFilter, setSelectedRegionFilter] = useState('All');
   const [selectedSizeFilter, setSelectedSizeFilter] = useState('All');
 
+  // Only display products with actual images (filter out the three wireframe blends)
+  const availableProducts = products.filter(product => 
+    !['south-india-blend', 'central-india-blend', 'general-blend'].includes(product.id)
+  );
+
   // Filter products by region
-  const filteredProducts = products.filter(product => {
+  const filteredProducts = availableProducts.filter(product => {
     const matchesRegion = selectedRegionFilter === 'All' || product.region === selectedRegionFilter;
     return matchesRegion;
   });
 
   const sizes = ['All', '2kg', '5kg', '10kg', '50kg'];
-  const regions = ['All', ...regionOptions];
+  const regions = ['All', ...regionOptions.filter(reg => !['South India', 'Central India', 'Not Sure'].includes(reg))];
 
   return (
     <div className="w-full max-w-[1180px] mx-auto px-6 pt-36 pb-20 animate-fade-in">
@@ -74,7 +79,7 @@ export default function ShopClient() {
 
         <div className="text-xs text-[#6F6A63] font-mono-plex border-t border-[#c3c8c2]/20 pt-4 flex justify-between">
           <span>Formulated for regional soil recovery</span>
-          <span>Showing {filteredProducts.length} of {products.length} Blends</span>
+          <span>Showing {filteredProducts.length} of {availableProducts.length} Blends</span>
         </div>
       </div>
 

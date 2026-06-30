@@ -92,10 +92,10 @@ export default function CertificateSection() {
       file: "/documents/msme-certificate.pdf",
     },
     {
-      title: "Registration Certificate",
-      label: "Business Registration",
-      description: "Legal registration document for enterprise verification and business identity.",
-      file: "/documents/registration-certificate.pdf",
+      title: "Licensing Certificate",
+      label: "Business Licensing",
+      description: "Official licensing document for business verification and operating compliance.",
+      file: "/documents/licensing-certificate.pdf",
     },
   ];
 
